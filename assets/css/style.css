@@ -1,0 +1,38 @@
+body {
+    background-image: url(http://colored-malt.co.uk/images/brown.jpg);
+    /* background-image: url(assets/images/barley.jpg) */
+}
+
+.jumbotron {
+    margin: 66px;
+    padding: 20px;
+    background-image: url(http://www.beer-faq.com/wp-content/uploads/2015/03/Beer-faq-bg-1500.jpg);
+    background-position: 50% 21%;
+    /* font-weight: bold; */
+}
+
+h1 {
+    text-align: center;
+    text-shadow: #444 1px 1px;  
+    font-weight: 900;    
+}
+
+.instruction {
+    font-size: 1.2em;
+    font-weight: 700;
+    text-shadow: #ccc 1px 1px;
+    text-align: center;
+}
+
+h5 {
+    /* font-weight: bold; */
+    /* text-shadow: #ddd 1px 1px; */
+    font-size: 24px;
+    color   : white
+}
+
+.lead {
+    font-weight: bold;
+    text-shadow: #333 2px 2px;
+    color: white;
+}
