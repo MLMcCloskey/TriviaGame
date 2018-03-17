@@ -36,3 +36,11 @@ h5 {
     text-shadow: #333 2px 2px;
     color: white;
 }
+
+.timer {
+    color: red;
+    font-weight: bold;
+    font-size: 3em;
+    /* float: right; */
+    position: absolute; right: 75px; bottom: 70px;
+}

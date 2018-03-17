@@ -24,9 +24,34 @@ answers: [{a:"5%", boolean: false}, {b:"10%", boolean: false}, {c:"14%", boolean
 
 var correct = 0;
 var incorrect = 0;
-
+var timeRemaining = 0;
+var intervalID;
 var i = 0;
 var j = 0;
+
+function timer() {
+    clearInterval(intervalID);
+    intervalID = setInterval(decrement, 1000);
+  }
+
+function decrement(){
+    timeRemaining--;
+    $(".timer").html(timeRemaining);
+    if (timeRemaining === 0) {
+        stopTimer();
+        alert("Time's Up!");
+        i++;
+        incorrect++;
+        if (i == questions.length) {
+            gameOver();
+        }
+        init();
+    }
+}
+
+function stopTimer(){
+    clearInterval(intervalID)
+}
 
 function init(){
     $("#question").html(questions[i].question);
@@ -34,6 +59,8 @@ function init(){
     $("#b").html(questions[i].answers[1].b);
     $("#c").html(questions[i].answers[2].c);
     $("#d").html(questions[i].answers[3].d);
+    timeRemaining= 15;
+    timer();
 }
 
 function score(){
@@ -57,6 +84,8 @@ function gameOver(){
 
 function game (){
     init();
+
+    $(".timer").html(timeRemaining);
 
     $("#btnA").on("click", function(){
         j = 0;
