@@ -1,12 +1,12 @@
 body {
-    background-image: url(http://colored-malt.co.uk/images/brown.jpg);
-    /* background-image: url(assets/images/barley.jpg) */
+    /* background-image: url(http://colored-malt.co.uk/images/brown.jpg); */
+    background-image: url("../../assets/images/barley.jpg")
 }
 
 .jumbotron {
     margin: 66px;
     padding: 20px;
-    background-image: url(http://www.beer-faq.com/wp-content/uploads/2015/03/Beer-faq-bg-1500.jpg);
+    background-image: url("http://www.beer-faq.com/wp-content/uploads/2015/03/Beer-faq-bg-1500.jpg");
     background-position: 50% 21%;
 }
 
@@ -39,9 +39,6 @@ h5 {
     font-weight: bold;
     font-size: 3em;
     position: absolute; right: 66px; bottom: 69px;
-}
-
-.timer {
     background-color: #333;
     padding: 0 15px;
     z-index: 99;

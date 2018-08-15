@@ -1,10 +1,10 @@
-var questions = [
+const questions = [
     {question: "Which of the four is not a core ingredient in beer?",
     answers: [{a:"Cereal Grains", boolean: false}, {b:"Hops", boolean: false}, {c:"Coriander", boolean: true}, {d:"Yeast", boolean: false}]
 } , {question: "Which of the four is not an ale?",
     answers: [{a:"Stout", boolean: false}, {b:"IPA", boolean: false}, {c:"Pilsner", boolean: true}, {d:"Tripel", boolean: false}]
 } , {question: "Which type of acid is responsible for hops bitter flavor?", 
-    answers: [{a:"Lactic Acid", boolean: false}, {b:"Acedic Acid", boolean: false}, {c:"Alpha Acids", boolean: true}, {d:"Butyric Acid", boolean: false}]
+    answers: [{a:"Lactic Acid", boolean: false}, {b:"Acetic Acid", boolean: false}, {c:"Alpha Acids", boolean: true}, {d:"Butyric Acid", boolean: false}]
 } , {question: "Which brewery is the oldest in Georgia?",
     answers: [{a:"Sweetwater", boolean: false}, {b:"Red Brick", boolean: true}, {c:"Monday Night", boolean: false}, {d:"Jekyll", boolean: false}]
 } , {question: "What is the maximum ABV allowed in Georgia?",
@@ -22,9 +22,9 @@ answers: [{a:"5%", boolean: false}, {b:"10%", boolean: false}, {c:"14%", boolean
 } 
 ]
 
-var correct = 0;
-var incorrect = 0;
-var timeRemaining = 0;
+let correct = 0;
+let incorrect = 0;
+let timeRemaining = 0;
 var intervalID;
 var i = 0;
 var j = 0;
@@ -45,7 +45,7 @@ function decrement(){
         if (i == questions.length) {
             gameOver();
         }
-        init();
+        // init();
     }
 }
 
